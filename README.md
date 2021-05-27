@@ -88,6 +88,10 @@ Nasıl kullanılır?
 	|--- 13.Telefon numarasından konum bulur amerika numaralarında felan kullanabilirsiniz
 	|
 	|--- 14.Panelsiz fake email verir istediğiniz sitelerde kullanabilirsiniz
+	|
+	|--- 15.Site admin paneli olabilecek linkler verir
+	|
+	|--- 16.spambot dosyası içine yazdığınız yazıyı istediğiniz zaman istediğiniz kadar atar
 
 ##############################
 16.tool kaba kuvvet saldırısı yani brute force yapmaya yarar hydra kullanır
