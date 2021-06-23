@@ -46,6 +46,12 @@ Handshake decrypter
 Directory fuzzer
 Spambot
 Admin panel bulucu
+Ultrabot(içinde bir sürü özellik)
+5 tane daha hash eklendi
+dosya indirici
+ip adresinden bilgi toplama
+auto click
+sms spam
 ----Yapay zeka desteği----
 
 
