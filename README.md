@@ -54,6 +54,10 @@ dosya indirici
 ip adresinden bilgi toplama
 auto click
 sms spam
+3 seçenekli virüs oluşturucu
+linux asistan
+zipcrack
+wordlist oluşturucuv2
 ----Yapay zeka desteği----
 
 
