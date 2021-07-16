@@ -2,6 +2,7 @@ import os
 os.system("clear")
 print("\033[95m")
 print('''	
+		Çalışması için ana dizinde ngrok dosyasının bulunması lazım
 		Yaptığınız ve yapacağınız herşeyden siz sorumlusunuz.
        ,--.--._			4 haneli port örneği: 1515
 ------" _, \___)
