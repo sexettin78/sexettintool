@@ -1345,7 +1345,7 @@ Yaptığınız ve yapacağınız herşeyden siz sorumlusunuz.
 	
 elif(sexettinsecim=="26"):
 	import os
-	print("\033[96m")
+	print("\033[94m")
 	print('''
  
          /~~~~~~\	
