@@ -1255,7 +1255,7 @@ Sexettintool virüs oluşturucu v2
 
 Yaptığınız ve yapacağınız herşeyden siz sorumlusunuz.
 
-2 tane virüs oluşturma seçeneği mevcuttur.
+4 tane virüs oluşturma seçeneği mevcuttur.
 
 1-) Sınırsız cmd açar py ve exe olarak çıktı alabilirsiniz
 
