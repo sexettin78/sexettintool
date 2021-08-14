@@ -1,0 +1,87 @@
+BU YAZI https://www.hostinger.web.tr/ SİTESİNDEN ALINMIŞTIR!!!
+KAYNAKÇA = https://www.hostinger.web.tr/rehberler/en-iyi-html-yazi-tipleri/
+
+
+El yazısı – Cursive (ör.: Zapf-Chancery)
+
+Cursive, yani el yazısı ailesindeki yazı tipleri insanların el yazısını taklit eder. Bu yüzden harfler akıcı bir biçimde birbirine bağlıdır.
+Fantezi – Fantasy (ör.: Star Wars)
+
+Fantezi, yani Fantasy yazı tipi ailesi genellikle her bir harfte dekoratif elementlere sahiptir ancak buna rağmen harfleri temsil ederler. Çoğu kurgusal kitap veya filmler bu yazı tipini başlıkları olarak kullanırlar.
+Serif (ör.: Times New Roman)
+
+Bu yazı tipi ailesinin en önemli özelliği bir harf veya sembolün içindeki işaretin sonunda ufak bir çizgi bulundurmasıdır. Birçok web sitesi Serif’i genel olarak gövde metni için kullanır.
+Sans-serif (ör.: Helvetica)
+
+Serif’in aksine Sans-serif her harfte ufak bir çizgi bulundurmaz. Ayrıca yazı tipleri genellikle benzer genişliğe sahiptir, bu da onlara modern ve minimalistik bir görünüş verir.
+Sabit genişlikli – Monospace (ör.: Courier)
+
+Bu yazı tipi ailesindeki yazı tiplerinde bütün harfler ve semboller yatay olarak aynı boşluğa sahiptirler. Genellikle daktilo veya bilgisayar terminallerinden kullanılırlar.
+
+
+1. Arial Yazı Tipi
+
+Arial genellikle sans-serif ailesine aittir ve en yaygın biçimde kullanılan yazı tiplerinden biridir.
+
+Birçok eleştirmen bu yazı tipinin en güvenli yazı tiplerinden biri olduğunu iddia eder. Hem çevrimiçi makaleler hem de yazılı medya bu yazı tipini kullanmaktadır.
+2. Times New Roman Yazı Tipi
+
+Bu HTML yazı tipi Serif grubundaki eski Times yazı tipinin bir çeşididir. Times New Roman yazılı ve kitapla alakalı içerikler için en popüler tercihtir. Daha da ötesiyse Times New Roman APA (American Psychological Association – Amerikan Psikoloji Derneği) tarafından tavsiye edilmiştir.
+3. Helvetica Yazı Tipi
+
+Tasarımcılar genellikle Helvetica’yı tercih ederler çünkü yapılabilecek en doğru seçimlerden biridir. Jeep, Kawasaki, Motorola, ve BMW gibi marka işaretlerinde bu yazı tipi kullanmaktadır.
+4. Times Yazı Tipi
+
+Aslen Times birçok eski gazetede kullanılmıştır. Eğer web sitenize geleneksel veya resmi bir hava vermek istiyorsanız bu yazı tipi harika bir seçimdir.
+5. Courier New Yazı Tipi
+
+Ekranda daha ince ve görsel olarak hoş gözüken bu yazı tipi Courier alternatiflerinden biridir. Bu yüzden elektronik cihazlar öncelikle Courier New’i kullanırlar.
+6. Verdana Yazı Tipi
+
+Bu yazı tipi düşük çözünürlüklü ekranlarda bile ufak boyutlarda okunabilirdir. Çoğu kişi Verdana’yı – doğru olmasa da – ekran yazı tipi olarak tanımlar. Örneğin, IKEA bu yazı tipini hem sitelerinde, hem de kataloglarında kullanır.
+7. Courier Yazı Tipi
+
+Courier’in sabit genişlikli yazı tipi ailesinin en popüler üyesi olduğunu söyleyebiliriz. Bu yazı tipi bütün işletim sistemlerinde önceden yüklü olarak gelir. Bu HTML yazı tipi ayrıca film senaryolarında daktilo karakterlerine benzediğinden dolayı sıkça kullanılmaktadır.
+8. Arial Narrow Yazı Tipi
+
+Bu yazı tipi Arial’ın orijinalinden daha şık duran versiyonlarından biridir. Bir alternatif olsa da kullanıcılar birçok işletim sisteminde bu yazı tipini önceden yüklü olarak bulabilir.
+9. Candara Yazı Tipi
+
+Microsoft Vista Candara’yı hayat veren ilk işletim sistemidir. Calibri ve Cambria ile beraber bu yazı tiplerindeki C harfi Windows’un ClearType yazı görselleştirme sistemiyle iyi entegre olur.
+10. Geneva Yazı Tipi
+
+İsmi tasarımcılarından birinin memleketinden gelen bu yazı tipi Sans-serif html yazı tipleri ailesine aittir.
+11. Calibri Yazı Tipi
+
+Microsoft Office’deki varsayılan yazı tipidir. Windows’un en çok kullanılan işletim sistemlerinden biri olmasıyla beraber bu yazı tipinin çoğu web sitesine uyacağından eminiz.
+12. Optima Yazı Tipi
+
+Optima ilhamını klasik Roman büyük harflerinden alır ve trafik işaretinden bir ürün logosuna kadar her türden metinde kullanılır. Erik Spiekermann (ünlü bir Alman matbaacı) bile herkesin bu yazı tipini “Amerika’daki her kapalı otoparkta ve hastanede” bulabileceğini söylemiştir.
+13. Cambria Yazı Tipi
+
+Calibri ve Candara ile birlikte, Cambria Microsoft’un yaptığı ClearType yazı tiplerinden biridir.
+14. Garamond Yazı Tipi
+
+Garamond birçok yazılı kitap için klasik bir yazı tipidir. Bu stille bir web siteye antik bir hava vermek mümkündür.
+15. Perpetua Yazı Tipi
+
+Bu yazı tipi orijinal bir yazı biçimi yapmak isteyen İngiliz bir heykeltıraşın fikrinden gelmektedir. Penguin Classics veya Pensilvanya Üniversitesi‘ndeki sanatsal veya akademik metinler sıkça Perpetua’yı kullanır.
+16. Monaco Yazı Tipi
+
+Sabit genişlikli yazı tipi ailesine ait olan Monaco MacOS X’in varsayılan yazı tipidir. İçlerinde köşegen bir çizgi olan fark edilebilir O harfi ve 0 rakamına sahiptir. MacOS bu yazı tipini 2009’a kadar Terminal’inde ve Xcode’unda kullanmıştır.
+17. Didot Yazı Tipi
+
+Didot bir serif fontudur ve çoğu eleştirmen tarafından neoklasik olarak tanımlanmıştır. Amerikan haber kanalı CBS News‘de ve The Late Show of Stephen Colbert‘da kullanılmaktadır.
+18. Brush Script MT Yazı Tipi
+
+Bu yazı tipi el yazısı tekniğine dayalı olarak kaligrafi stiline sahiptir. Bu şekilde, Brush Script MT hem güzel gözüken, hem de okunabilir HTML yazı tipleri listemizde yerini almıştır.
+19. Lucida Bright Yazı Tipi
+
+Lucida yazı tipi ailesinden olan Lucida Bright’ın bölü işaretleri diğerlerinden daha fazla kontrasta sahiptir. Bu yazı tipinin popüler kullanıcılarından biri Scientific American Dergisi‘dir.
+20. Copperplate Yazı Tipi
+
+Copperplate’ın tasarımcıları yazı tiplerinin sadece headerlar veya başlıklar için kullanılmasını istemişlerdir, bu yüzden de bu yazı tipinde sadece büyük harfler mevcuttur. Bu yazı tipi Türkiye’de de mevcut olan “Kim Milyoner Olmak İster” yarışmasının tescilli markası olduğunda ünlü olmuştur.
+
+
+#####################################################################################################################################################################################################################################################################################################
+
