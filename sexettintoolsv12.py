@@ -977,7 +977,7 @@ YERALTINA HOŞGELDİNİZ ;)
 
 
 	elif(yeraltisecim=="26"):
-		os.system("python3 sexettintoolsv"+surum+".py")
+		os.system("python3 sexettintoolsv12.py")#os.system("python3 sexettintoolsv"+surum+".py")
 
 	else:
 		print("Hatalı seçim,doğru yazınız")
