@@ -17,3 +17,5 @@ mpv
 ngrok
 php
 selenium
+opencv-python
+beautifulsoup4

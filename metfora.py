@@ -156,7 +156,7 @@ elif(metfora=="5"):
 		os.system("cd ..")
 		os.system("rm -rf sexettintool")
 	elif(sec=="n"):
-		os.system("python3 sexettintoolsv"+surum+".py")
+		os.system("python3 sexettintoolsv6.py")
 
 elif(metfora=="7"):
 	os.system("git pull")
@@ -189,5 +189,5 @@ elif(metfora=="6"):
 	os.system("apt install php")
 	os.system("apt-get update")
 	os.system("pip install selenium")
-	os.system("pip install beautifulsoup4")
 	os.system("pip install opencv-python")
+	os.system("pip install beautifulsoup4")
