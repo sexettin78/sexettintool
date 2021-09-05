@@ -1,13 +1,31 @@
-Öncelikle bu toolda yaptığınız ve yapacağınız herşeyden başlı başına sizin sorumlu olduğunuzu,yapımcı veya githubun hiçbir sorumluluk kabul etmediğini bildiriyorum.
+### Öncelikle bu toolda yaptığınız ve yapacağınız herşeyden başlı başına sizin sorumlu olduğunuzu,yapımcı veya githubun hiçbir sorumluluk kabul etmediğini bildiriyorum.
 
 peki nedir bu tool? ne işe yarar? 
 Siber güvenlik alanında çalışmalar yapan kişilerin işlerini kolaylaştırmak için yapılmış,açık kaynaklı bir siber güvenlik aracıdır.
 Ne işe yaradığını içindekiler kısmından görebilirsiniz
 
 
+###### 1-) pkg install git
 
+###### 2-) pkg install python
 
-İçindekiler:
+###### 3-) pkg install python2
+
+###### 4-) pkg install python3
+
+###### 5-) git clone https://github.com/sexettin78/sexettintool
+
+###### 6-) cd sexettintool 
+
+###### 7-) python3 metfora.py 
+
+###### 8-) 6.seçeneği seçin
+
+###### 9-) pip install -r requirements.txt
+
+###### 10-) python3 main.py
+
+### İçindekiler:
 1-) Exploit Tarama Aracı
 
 2-) Güvenlik Duvarı Tespit Aracı
@@ -131,17 +149,17 @@ Ne işe yaradığını içindekiler kısmından görebilirsiniz
 61-) Hedef sitedeki tüm linkleri çekmek
 
 ------Yapay Zeka Desteği------
-Ve daha bir sürü seçenek...
+###### Ve daha bir sürü seçenek...
 
 
 
-İletişim için; 
-Telegram: @korkakcocuk
-Telegram genel kanal: t.me/sexettin
-Discord: Sexettin#3146 
-Discord sunucu: discord.io/sexettin
-Instagram: Sexettin (Instagramı haftalık kontrol ediyorum)
-Farklı iletişim yollarını internette bulabilirsiniz: www.google.com/search?q=sexettin
+### İletişim için; 
+###### Telegram: @korkakcocuk
+###### Telegram genel kanal: t.me/sexettin
+###### Discord: Sexettin#3146 
+###### Discord sunucu: discord.io/sexettin
+###### Instagram: Sexettin (Instagramı haftalık kontrol ediyorum)
+###### Farklı iletişim yollarını internette bulabilirsiniz: www.google.com/search?q=sexettin
 
 
 
