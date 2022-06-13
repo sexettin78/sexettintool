@@ -148,6 +148,18 @@ Ne işe yaradığını içindekiler kısmından görebilirsiniz
 
 61-) Hedef sitedeki tüm linkleri çekmek
 
+62-) Hedef sitedeki tüm yazıları çekmek
+
+63-) Hedef sitedeki tüm resimleri çekmek
+
+64-) Veri karşılaştırıcı
+
+65-) Bilinen kullanıcı adından sosyal medya bulma
+
+66-) Dosya içerisinde arama işlemleri
+
+67-) StnCrypt
+
 ------Yapay Zeka Desteği------
 ###### Ve daha bir sürü seçenek...
 
@@ -159,6 +171,7 @@ Ne işe yaradığını içindekiler kısmından görebilirsiniz
 ###### Discord: Sexettin#3146 
 ###### Discord sunucu: discord.io/sexettin
 ###### Instagram: Sexettin (Instagramı haftalık kontrol ediyorum)
+###### Mail: furkand@leafyetstudio.xyz
 ###### Farklı iletişim yollarını internette bulabilirsiniz: www.google.com/search?q=sexettin
 
 
