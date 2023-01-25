@@ -166,7 +166,7 @@ Ne işe yaradığını içindekiler kısmından görebilirsiniz
 
 
 ### İletişim için; 
-###### Telegram: @korkakcocuk
+###### Telegram: @FurkanDe
 ###### Telegram genel kanal: t.me/sexettin
 ###### Discord: Sexettin#3146 
 ###### Discord sunucu: discord.io/sexettin
