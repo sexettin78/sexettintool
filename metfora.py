@@ -133,7 +133,7 @@ elif(metfora=="2"):
 elif(metfora=="3"):
 	print('''
 
-Telegram = @korkakcocuk
+Telegram = @furkande
 Discord = Sexettin#3146
 Telegram genel kanal = t.me/sexettin
 Instagram = Sexettin
