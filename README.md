@@ -1,4 +1,4 @@
-### Öncelikle bu toolda yaptığınız ve yapacağınız herşeyden başlı başına sizin sorumlu olduğunuzu,yapımcı veya githubun hiçbir sorumluluk kabul etmediğini bildiriyorum.
+### Öncelikle bu toolda yaptığınız ve yapacağınız her şeyden başlı başına sizin sorumlu olduğunuzu, yapımcı veya githubun hiçbir sorumluluk kabul etmediğini bildiriyorum.
 
 peki nedir bu tool? ne işe yarar? 
 Siber güvenlik alanında çalışmalar yapan kişilerin işlerini kolaylaştırmak için yapılmış,açık kaynaklı bir siber güvenlik aracıdır.
