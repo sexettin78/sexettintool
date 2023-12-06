@@ -168,10 +168,9 @@ Ne işe yaradığını içindekiler kısmından görebilirsiniz
 ### İletişim için; 
 ###### Telegram: @FurkanDe
 ###### Telegram genel kanal: t.me/sexettin
-###### Discord: Sexettin#3146 
-###### Discord sunucu: discord.io/sexettin
+###### Discord: Sexettin
+###### Discord sunucu: https://discord.com/invite/DTN5RSvYvw
 ###### Instagram: Sexettin (Instagramı haftalık kontrol ediyorum)
-###### Mail: furkand@leafyetstudio.xyz
 ###### Farklı iletişim yollarını internette bulabilirsiniz: www.google.com/search?q=sexettin
 
 
