@@ -174,6 +174,6 @@ Ne işe yaradığını içindekiler kısmından görebilirsiniz
 ###### Instagram: Sexettin 
 ###### Mail: furkandegirmenciler@gmail.com
 ###### Farklı iletişim yollarını internette bulabilirsiniz: www.google.com/search?q=sexettin
-
+![logo](sexettin.png "Yapımcı: Sexettin")
 
 
