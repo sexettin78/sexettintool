@@ -1,0 +1,7 @@
+Bu kısmı kullanmak için https://ngrok.com/ adresinden oturum açın
+Sonrasında buradaki ngrok kurulum adımlarını uygulayın: https://dashboard.ngrok.com/get-started/setup/linux
+ngrok dosyasını sexettintool klasörünün içerisine atın.
+Kötüye kullanılmasını engellemek için Instagram phishing üzerine herhangi bir index dosyası verilmedi. Kendiniz index.php dosyasını değiştirip uygun görünümü elde edebilirsiniz. burada sadece mantığını anlamanız için basit bir script verilmiştir.
+Eğer ki kullanıcının sadece ip adresi, ua gibi bilgilerini almak istiyorsanız urlnin sonuna index2.php ekleyin.
+Örneğin ngrok size abc.com linkini oluşturduysa linki abc.com/index2.php diye değiştirin.
+Site varsayılan olarak google.com'a yönlendirir. Bu yönlendirmeyi değiştirmek için index2.php dosyasının 12. satırını değiştirebilirsiniz.

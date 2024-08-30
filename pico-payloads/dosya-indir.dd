@@ -1,0 +1,10 @@
+DELAY 2000
+GUI r
+DELAY 2000
+STRING https://leafyetstudio.com/downloads/1.0/LytNotes.exe
+DELAY 1000
+ENTER
+DELAY 1500
+ENTER
+DELAY 16000
+ALT F4
