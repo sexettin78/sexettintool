@@ -59,7 +59,8 @@ python_packages = [
     'scikit-learn',  
     'scapy',  
     'pybluez',  
-    'moviepy', 
+    'pytube',
+    'moviepy',
     'paramiko',  
 ]
 
