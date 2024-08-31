@@ -1149,7 +1149,7 @@ Bir şeyler eksik mi? Yeraltına bakmayı dene!
 
 39-) Raspberry Pi Pico Hack
 
-40-) Sexettin Twin - ESP32
+40-) Sexettin Twin - ESP32 & ESP8266
 
 41-) Blue-cough (Bluetooth Saldırı Aracı)
 
