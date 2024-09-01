@@ -305,9 +305,9 @@ Gelişmiş Şifreleme 2: Belirtilen metni veya dosyayı stncrypt pre 2 algoritma
 
 Yapay Zeka Şifre Analizi: Belirttiğiniz wordlist ile size özel bir yapay zeka modeli oluşturur. Bu model içerisine eklediğiniz şifreleri zayıf olarak kabul eder ve girdiğiniz şifreleri önceki zayıf şifrelerle kıyaslayarak şifre gücünü söyler.
 
-Raspberry Pi Pico Hack
+Raspberry Pi Pico Hack: Raspberry Pi Pico cihazınızı siber güvenlik aracına dönüştürür. Sexettin'in sizin için hazırladığı 5 payload içinden istediklerinizi kurup kullanabilirsiniz. Bu sayede pico'yu bağladığınız cihazın wifi şifrelerini çekebilir, dosya indirtebilir, antivirüs kapatabilir, istediğiniz url adresini açtırabilir veya da belirli süre sonra cihazı kapattırabilirsiniz.
 
-Sexettin Twin: Sexettin Twin saldırısı, ESP32 kullanarak bir ağın ikizini oluşturur ve kullanıcıyı oturum açması için yönlendirir. Kullanıcının girdiği verilere aynı ağa bağlanıp özel dosya ile ulaşabilirsiniz.
+Sexettin Twin: Sexettin Twin saldırısı, sizin seçiminize bağlı olarak ESP32 veya ESP8266 kullanarak bir ağın ikizini oluşturur ve kullanıcıyı oturum açması için yönlendirir. Kullanıcının girdiği verilere aynı ağa bağlanıp özel dosya ile ulaşabilirsiniz.
 
 Blue-cough: Bluetooth cihazlarının port adreslerini tarar. İstediğiniz bluetooth cihazının sinyalini kesmenize yarar. İçerisinde bluetooth saldırı üzerine gelişmiş seçenekler mevcuttur.
 
