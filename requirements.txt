@@ -20,4 +20,4 @@ paramiko
 pillow
 exifread
 scikit-learn
-paramiko
+pytube
