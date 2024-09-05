@@ -8,8 +8,6 @@ Yaptığınız ve yapacağınız her şeyden siz sorumlusunuz.
 | 4,5,6   | x                  |
 | 7,8,9   | x                  |
 | 9alpha  | x                  |
-| 7,8,9   | x                  |
-| 9alpha  | x                  |
 | 10,11,12| x                  |
 | 13      | x                  |
 | 14      | ✓                  |
