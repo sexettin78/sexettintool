@@ -841,6 +841,8 @@ Seçim Menüsü
 		print("Posta Kodu: "+veriler["zip"])
 		print("Saat Dilimi: "+veriler["timezone"])
 		print("İnternet Sağlayıcısı: "+veriler["isp"])
+		print("Lat: "+str(veriler["lat"]))
+		print("Lon: "+str(veriler["lon"]))
 		print("Org: "+veriler["org"])
 		print("As: "+veriler["as"])
 		print("Hedef: "+veriler["query"])
