@@ -3,6 +3,8 @@
 
 ### Bu araç tamamıyla Sexettin tarafından, kurucusu olduğu Leafyet Studio içerisinde hazırlanmıştır.
 
+## Eğer siz de böyle araçlar yazmak istiyorsanız, bizzat Sexettin'in kaleminden çıkan "[Sıfırdan Uygulamalara Python](https://g.co/kgs/Fa6b4sP)" kitabını alabilirsiniz.
+
 # Kurulum
 Kurulum için alttaki komutları tek tek terminale yapıştırınız.
 ### apt update && apt upgrade
