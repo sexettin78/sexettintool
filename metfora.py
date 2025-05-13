@@ -68,6 +68,7 @@ python_packages = [
     'asyncio',
     'paramiko',  
     'PyPDF2',
+    'piexif',
 ]
 
 # APT paketleri
@@ -301,7 +302,7 @@ FotoDit: Terminal üzerinde çeşitli fotoğraf düzenlemeleri yapmanızı sağl
 
 Bilinen Kullanıcı Adını Sosyal Medyada Arama: Dinamik olarak hangi sitelerde belirtilen kullanıcı adı ile hesap açıldığını kontrol eder.
 
-Exif İşlem Aracı: Exif verisi görüntüleme veya silme işlemleri yapabilirsiniz.
+Exif İşlem Aracı: Exif verisi görüntüleme, düzenleme ve silme işlemleri yapabilirsiniz.
 
 Site Fuzzing Aracı (Rastgele): Belirtile siteye farklı parametreler göndererek nasıl sonuç verdiğini kontrol eder.
 
@@ -327,7 +328,7 @@ Imitator-x11:  Belirtilen kişinin mesajlarını öğrenerek o kişinin bir kopy
 
 Encode-Decode: URL, HTML, Base64, Base58, ASCII, HEX, OCTAL, BINARY türlerinde encoding ve decoding işlemleri yapar.
 
-Pdf Dosyasından Bilgi Topla: Seçilen pdf dosyasının metadata verilerini ve sayfalar içerisindeki çıkarabileceği tüm yazıları çıkarır.
+Pdf Dosyasından Bilgi Topla: Seçilen pdf dosyasının metadata verilerini ve sayfalar içerisindeki çıkarabileceği tüm yazıları çıkarır. Ayrıca metadata düzenlemenize olanak sağlar.
 
 LikeGrep: Veri ayıklama programıdır. Bir dosyanın belli satırını, satırlarını, kelimelerini ayıklamak için kullanılır. grep benzeri bir işlev sunar.
 
