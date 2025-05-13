@@ -21,17 +21,19 @@ def extract_text(pdf_path):
             print(f"\n--- Sayfa {i+1} ---")
             text = page.extract_text()
             print(text if text else "Yazı algılanamadı.")
+
 print("""1 - Pdf Dosyası Veri Analizi
 2 - Pdf Dosyasından Metadata Verilerini Sil
+3 - Pdf Dosyasına Metadata Ekle
 """)
 secim = int(input("Seçiminizi giriniz:"))
 pdf_path = input("Pdf dosyasının yolunu giriniz:")
 if(secim==1):
-	if not os.path.exists(pdf_path):
-    		print("Hata: Dosya bulunamadı.")
-	else:
-    		extract_metadata(pdf_path)
-    		extract_text(pdf_path)
+    if not os.path.exists(pdf_path):
+        print("Hata: Dosya bulunamadı.")
+    else:
+        extract_metadata(pdf_path)
+        extract_text(pdf_path)
 elif(secim==2):
     if not os.path.exists(pdf_path):
         print("Hata: Dosya bulunamadı.")
@@ -45,7 +47,30 @@ elif(secim==2):
             output_path = pdf_path.replace(".pdf", "_temiz.pdf")
             with open(output_path, 'wb') as output_file:
                 writer.write(output_file)
-
-            print(f"Metadata temizlendi. Yeni dosya: {output_path}")
+        print(f"Metadata temizlendi. Yeni dosya: {output_path}")
+elif(secim==3):
+    if not os.path.exists(pdf_path):
+        print("Hata: Dosya bulunamadı.")
+    else:
+        title = input("Başlık (Title): ")
+        author = input("Yazar (Author): ")
+        subject = input("Konu (Subject): ")
+        producer = input("Üretici (Producer): ")
+        with open(pdf_path, 'rb') as file:
+            reader = PyPDF2.PdfReader(file)
+            writer = PyPDF2.PdfWriter()
+            for page in reader.pages:
+                writer.add_page(page)
+            metadata = {
+                '/Title': title,
+                '/Author': author,
+                '/Subject': subject,
+                '/Producer': producer
+            }
+            writer.add_metadata(metadata)
+            output_path = pdf_path.replace(".pdf", "_yenimetadata.pdf")
+            with open(output_path, 'wb') as output_file:
+                writer.write(output_file)
+        print(f"Yeni metadata eklendi. Yeni dosya: {output_path}")
 else:
-	print("Hatalı giriş")
+    print("Hatalı giriş")
