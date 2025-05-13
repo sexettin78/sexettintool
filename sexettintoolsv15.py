@@ -2427,7 +2427,7 @@ elif(sexettinsecim=="53"):
 	os.system("python3 kits/nreaper.py")
 	
 elif(sexettinsecim=="54"):
-	print(""""\033[96m""",end="")
+	print("""\033[96m""",end="")
 	print(r"""
 	
 	⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⣀⣤⣴⣾⣿ 	Not: 2 ve 3. seçenekleri çok fazla veya agresif kullanmak, 
