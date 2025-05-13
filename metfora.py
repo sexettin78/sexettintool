@@ -15,7 +15,7 @@ print('''
          __/      \_____   Yaptığınız ve yapacağınız her şeyden siz sorumlusunuz
         /'             |	 hiçbir şekilde sorumluluk kabul edilmez.
          /     /-\     /
-        /      /  \--/	    1-) Kurulum (bazı durumlarda kök kullanıcı gerektirir)
+        /      /  \--/	    1-) Kurulum (kök kullanıcı gerektirir)
        /     /
       /      /		    2-) İletişim
      (      >
@@ -28,6 +28,10 @@ print('''
 			    6-) Sexettintool'a giriş yap
 
                             7-) Bu araç içindekiler ne işe yarıyor?
+                            
+                            8-) Paketleri kontrol et
+                            Not: Birçok seçenek kök kullanıcı gerektirir. 
+                            Hata aldığınız durumlarda yönetici modunda programı tekrar çalıştırınız.
 ''')
 
 metfora = input("Hangisini seçiyorsunuz? ")
@@ -60,8 +64,10 @@ python_packages = [
     'scapy',  
     'pybluez',  
     'pytube',
-    'moviepy',
+    'moviepy==1.0.3',
+    'asyncio',
     'paramiko',  
+    'PyPDF2',
 ]
 
 # APT paketleri
@@ -72,7 +78,7 @@ apt_packages = [
     'neofetch',
     'figlet',
     'mpv',
-    'searchsploit',
+    'exploitdb',
     'wafw00f',
     'ncrack',
     'nmap',
@@ -88,12 +94,13 @@ apt_packages = [
     'hydra',
     'aircrack-ng',
     'php',
+    'ffmpeg',
     'pyinstaller',
 ]
 
 def install_python_package(package):
     try:
-        subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', package, '--break-system-packages'])
     except subprocess.CalledProcessError:
         print(f"\033[91m{package} paketi yüklenemedi\033[97m")
 
@@ -157,7 +164,7 @@ Güvenlik Duvarı Tespit Aracı: wafw00f ile güvenlik duvarı tespiti yapar
 
 Kaba Kuvvet Saldırısı Aracı: 11 farklı seçenek sunar. İstediğiniz bağlantı türüne ncrack ile kaba kuvvet otomasyonu gerçekleştirebilirsiniz.
 
-Port Tarama Aracı: Size sunulan 3 farklı tarama seçeneğini çalıştırabilirsiniz. nmap ile çalışır.
+Port Tarama Aracı: NMAP otomasyonunu gelişmiş bir biçimde sağlayarak daha efektif ve özel taarmalar gerçekleştirmenizi sağlar.
 
 Rootkit Tarama Aracı: chkrootkit ile rootkit taraması başlatır.
 
@@ -211,7 +218,10 @@ Zip Şifre Kırıcı: Zip dosyasının şifresini sözlük saldırısı ile kır
 
 Wordlist Oluşturucu: Sexettintool kendi wordlist oluşturma algoritması.
 
-Oltalama Araçları: Instagram ve ip adresi yakalamak için oltalama sunucusu oluşturur. Kullanıcının girdiği veriler size gelir.
+Oltalama Araçları: 3 farklı seçeneği mevcuttur. Bu seçeneklerin üçünü de aynı anda sunucuda barındırır. Ngrok bağlantısı kurarak size bir oltalama laboratuvarı oluşturur.
+- INDEX.PHP: Basit bir özelleştirilebilir form sayfası. Dışarıdan girilen bilgileri size iletir. Kötüye kullanımı azaltmak için işlevselliği düşük bir script verilmiştir. Script değişimi ve özelleştirilmesi yapılabilir. 
+- INDEX2.PHP: İstediğiniz siteye yönlendirme yapan bir bağlantı oluşturur. Bağlantıya tıklayan kişilerin ip ve user agent bilgilerini size iletir.
+- INDEX3.PHP: SAYSNEEZE adında bir sayfa oluşturur. Bu program sayesinde siteye girip kamera izni veren şahısların kamerasından her saniye 2 fotoğraf çekip, bu fotoğrafları metin şeklinde depolamanızı sağlar. Sonrasında bu metinleri Sexettintool içerisinden hızlıca resim hâline getirebilirsiniz.
 
 Instagram Bot: Hesaplar dosyasına girdiğiniz hesaplar üzerinden topluca bir kişiyi takip ettirmek, takipten çıkartmak için kullanılabilir.
 
@@ -241,7 +251,7 @@ Rastgele İnsan Gönderisi Üret: api kullanarak rastgele insan gönderisi oluş
 
 Dns Bilgi Toplama: Belirtilen domain adresinin dns bilgilerini gösterir.
 
-ISBN Numarasından Bilgi Toplama: ISBN numarası üzerinden kitap bilgisi toplar.
+ISBN Numarasından Bilgi Toplama (OpenLibrary): ISBN numarası üzerinden OpenLibrary servisi aracılığıyla kitap bilgisi toplar. Toplanılan bilgileri okunaklı hâlde yazdırır.
 
 Mailin Geçerliliğini Kontrol Etme: api kullanarak belirtilen mail adresini dinler ve geçerliliğini kontrol eder.
 
@@ -263,7 +273,7 @@ Kaba Kuvvet Saldırısı v2 (mail): Hydra ile gmail ve hotmail için kaba kuvvet
 
 Şifreleme (md5,sha vs. şifrele) Aracı: Belirttiğiniz metni md5, sha1, sha224, sha256, sha384, sha512 ve blake2b algoritmaları ile şifreleyip tüm sonuçları gösterir.
 
-DDOS Aracı: Sexettin'in sizin için hazırladığı 9 farklı saldırı seçeneği ile ddos saldırısı yapar. 9 saldırıdan 6 tanesi farklı boyutlarda paket gönderirken diğer saldırıların kendine has saldırı biçimi vardır. 
+DDOS Aracı: Sexettin'in sizin için hazırladığı 12 farklı saldırı seçeneği ile ddos saldırısı yapar. 12 saldırıdan 6 tanesi farklı boyutlarda paket gönderirken diğer saldırıların kendine has saldırı biçimi vardır. PING flood, SYN flood, UDP flood, Slowloris ve daha birçok ddos saldırısını gerçekleştirebilir.
 
 Site Kaynak Kodu Çekme Aracı: Belirtilen sitenin kaynak kodunu çekip kaydetmenize yarar.
 
@@ -275,7 +285,7 @@ Tersine Şifreleme (md5, sha vs. şifre kır): Sözlük saldırısı ile md5, sh
 
 Directory Fuzzer: Belirtilen wordlist içerisindeki yolların, belirtilen site üzerinde olup olmadığını deneyerek kontrol eder.
 
-Metforaya Bağlan: Sexettintool'u düzgün ve hatasız kullanmanız için kurulum yapar. Güncelleme, silme, yeniden yükleme veya da iletişim seçenekleri sunar.
+Metforaya Bağlan: Sexettintool'u düzgün ve hatasız kullanmanız için kurulum yapar. Paket yükleme, paket denetleme, güncelleme, silme, yeniden yükleme ve iletişim seçenekleri sunar.
 
 Virüs Oluştur: 4 farklı virüs oluşturma seçeneği ile virüs oluşturmanızı sağlar. 
 
@@ -287,7 +297,7 @@ Index Oluşturucu: Sizin yönergelerinizle web sayfası oluşturur.
 
 Xsnot: Sexettintool üzerinde not alma, not silme gibi işlemler yapmanızı sağlar.
 
-FotoDit: Terminal üzerinde çeşitli fotoğraf düzenlemeleri yapmanızı sağlar.
+FotoDit: Terminal üzerinde çeşitli fotoğraf düzenlemeleri yapmanızı sağlar. İçerisinde birçok resim düzenleme seçeneği vardır. Özellikle renk değiştirici özelliği kullanılarak resimler üzerinde önemli oynamalar, arkaplan silme işlemleri, resim iyileştirme ve düzenleme yapabilirsiniz.
 
 Bilinen Kullanıcı Adını Sosyal Medyada Arama: Dinamik olarak hangi sitelerde belirtilen kullanıcı adı ile hesap açıldığını kontrol eder.
 
@@ -314,7 +324,68 @@ Blue-cough: Bluetooth cihazlarının port adreslerini tarar. İstediğiniz bluet
 Crawler-x11: Telegram üzerinde otomatik olarak hedef kullanıcının sizinle olan mesajlarını ve ortak gruptaki mesajlarını kayıt eder. Whatsapp için de çalışabilir.
 
 Imitator-x11:  Belirtilen kişinin mesajlarını öğrenerek o kişinin bir kopyasını oluşturur. Örneğin bir insanın kopyasını oluşturup o kişi gibi merhaba kelimesi ile cümle kurmasını isteyebilirsiniz.
+
+Encode-Decode: URL, HTML, Base64, Base58, ASCII, HEX, OCTAL, BINARY türlerinde encoding ve decoding işlemleri yapar.
+
+Pdf Dosyasından Bilgi Topla: Seçilen pdf dosyasının metadata verilerini ve sayfalar içerisindeki çıkarabileceği tüm yazıları çıkarır.
+
+LikeGrep: Veri ayıklama programıdır. Bir dosyanın belli satırını, satırlarını, kelimelerini ayıklamak için kullanılır. grep benzeri bir işlev sunar.
+
+Gelişmiş Web Scraper: Web üzerinden detaylı veri çekmek için kullanılır. Etiket filtreleme, etiket gösterme, sayfa içeriği kaydetme gibi ek özellikleri mevcuttur.
+
+Strings: Bir program üzerindeki dışa aktarılabilir metinleri çıkarmak için kullanılır. Bu sayede bir uygulamanın sunucusunu, içerisindeki gizli yazıları ve detayları görebilirsiniz.
+
+Traceroute: Bir paketin kaynaktan hedefe giden yolunu gösterir. Sisteminizdeki Traceroute - Tracert komutlarının Python ile yazılmış versiyonudur.
+
+Steganografi: Resim içerisine veri gizleme aracı. PNG formatındaki görsellerinizin içerisine, resmin görümünde değişiklik yapmadan birçok dosyayı saklayıp sonrasında dışarı aktarabilirsiniz. İsterseniz başkaları dışarı aktaramasın diye şifre de koyabilirsiniz.
+
+Dosya Analizi: Belirtilen dosyanın hash karmalarını, oluşturulma detaylarını, izinlerini, gerçek uzantısını ve dosyayla ilgili daha fazla bilgiyi size sunar.
+
+Email Header Analyzer: Dışarı aktarılan email başlıklarını daha okunaklı hâle getirir ve ek bilgileri açığa çıkarmaya çalışır.
+
+Network Reaper: Ağ dinleyicisi. Ağınızdaki paketlerin isterseniz tümünü isterseniz de filtrelediğiniz kadarını dinleyip bir dosyaya kaydeder. Daha sonrasında araç içerisindeki çözümle seçeneğinden paket dosyanızı seçerek girilen siteleri (http) görebilir ve bakılan resimleri indirebilirsiniz. Dinleme ve ayıklama özellikleri ile ön plana çıkar.
+
+Telegram Kullanıcı Araçları: Telegram üzerinde konuştuğunuz insanların ID numarasını öğrenmek, ID numarasından tahmini hesap oluşturma tarihini görmek ve de bahsetme denetleyici özelliklerine sahip bir Telegram araç kitidir. Bahsetme denetleyici özelliği, program açık kaldığı sürece sizi etiketleyen, sizin mesajınıza yanıt veren kişilerin mesajlarını detaylarla beraber kayıt eder ve depolar.
+
+Hash Analizi: Girilen hash karmasını analiz eder ve hangi türde olduğunu gösterir.
+
+ISBN Numarasından Bilgi Toplama (Google): Google kitap servisinin sunduğu API anahtarını kullanarak ISBN numarasından detaylı bilgi toplar. Toplanılan bilgileri daha okunaklı hâle getirir.
+
+Linux Bilgi Toplayıcı Dosya: Hedef sisteme atacağınız bu dosyayı çalıştırarak birçok bilgi edinebilirsiniz. Bu bilgiler içerisinde sistem bilgileri, kullanıcı bilgileri, ağ bilgileri, SSH anahtarları, cron görevleri, ortam değişkenleri, işlem bilgileri, geçmiş bash kayıtları, kurulu paketler, sudo yetkileri, yetkisi yüksek dosyalar ve dahası bulunur.
+
+Dosya Zaman Manipülasyonu: Belirtilen dosyanın oluşturulma tarihini, istediğiniz tarih olarak değiştirir.
+
+Uzantı Sahteleyici: Belirtilen reverse shell dosyasının sunucudan geçebilmesi için olası dosyalar oluşturur. Bu dosyaları tek tek deneyerek güvenliği aşabilirsiniz. Oluşturulan dosyalarının her biri farklı bir teknik ile kendini gizlemeye çalışır ve dosya işlevini korur.
+
+Dizin Listeleyici: Wordlist kullanarak belirtilen sitedeki olası dizinleri tarar ve bulunan dizinleri detaylarıyla gösterir.
+
+Subdomain Listeleyici: Wordlist kullanarak belirtilen domain üzerindeki alt domainleri bulmaya çalışır. Bulunan alt domain adresleri, detaylarıyla beraber gösterilir.
+
+Firebase Reaper: Belirtilen Firebase sunucusundan json türünde veri çekmek ve veriyi kaydetmek için kullanılır. 
+
+Base64 ve Resim Dönüşümleri: Base64 formatındaki metin verisini resme, resimi de base64 formatındaki metne dönüştürmek için kullanılır.
+
+CVE Numarasından Bilgi Toplama: Circl servisinin API anahtarını kullanarak CVE numarasından bilgi toplar. Toplanılan bilgileri ayıklayıp daha okunaklı ve anlaşılır bir biçimde ekrana yazdırır.
 ''')
+
+elif metfora == "8":
+    print("\033[93mYüklü Python paketleri kontrol ediliyor...\n")
+    for p in python_packages:
+        result = subprocess.run(["pip", "show", p], stdout=subprocess.DEVNULL)
+        if result.returncode == 0:
+            print(f"\033[92m✓ {p}")
+        else:
+            print(f"\033[91m✗ {p} YÜKLÜ DEĞİL")
+
+    print("\n\033[33mYüklü APT paketleri kontrol ediliyor...\n")
+    for a in apt_packages:
+        result = subprocess.run(["dpkg", "-s", a], stdout=subprocess.DEVNULL)
+        if result.returncode == 0:
+            print(f"\033[92m✓ {a}")
+        else:
+            print(f"\033[91m✗ {a} YÜKLÜ DEĞİL")
+    print("\n"+"\033[94mEKSİK PAKETLERİ YÜKLEMEK İÇİN METFORAYI AÇIP 1. SEÇENEĞİ KÖK KULLANICIDA ÇALIŞTIRINIZ")
+
 
 else:
     print("Geçersiz seçenek")

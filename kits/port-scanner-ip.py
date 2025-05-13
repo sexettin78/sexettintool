@@ -1,22 +1,62 @@
 import socket
+import threading
 
-def port_scanner(ip, port_range):
-    print(f"Ip taranıyor: {ip}, aralık: {port_range}")
-    open_ports = []
+def scan_port(ip, port, timeout, show_banner=False):
+    try:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+            sock.settimeout(timeout)
+            result = sock.connect_ex((ip, port))
+            if result == 0:
+                banner = ""
+                if show_banner:
+                    try:
+                        sock.sendall(b"HEAD / HTTP/1.0\r\n\r\n")
+                        banner = sock.recv(1024).decode(errors='ignore').strip()
+                    except:
+                        banner = "Banner alınamadı"
+                print(f"[+] Port {port} açık", f"=> {banner}" if banner else "")
+    except Exception:
+        pass
 
-    for port in port_range:
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.settimeout(1)
-        result = sock.connect_ex((ip, port))
-        
-        if result == 0:
-            print(f"Port {port} açık")
-            open_ports.append(port)
-        sock.close()
+def sexettin_scanner():
+    ip = input("Hedef IP: ").strip()
+    port_range_input = input("Port aralığı (örnek: 20-80): ").strip()
+    print("Timeout süresini arttırmak, daha gizli ve etkili fakat daha yavaş bir tarama gerçekleştirir")
+    timeout = float(input("Timeout süresi (varsayılan 2): ").strip() or "2")
+    banner_input = input("Banner bilgisi alınsın mı? (e/h): ").lower().strip()
+    show_banner = banner_input == "e"
 
-    return open_ports
+    try:
+        start_port, end_port = map(int, port_range_input.split('-'))
+        print(f"\n[+] {ip} IP'si üzerinde {start_port}-{end_port} portları taranıyor...\n")
+    except:
+        print("[-] Port aralığı hatalı")
+        return
 
-target_ip = input("Hedef ip adresini giriniz:")
-port_range = range(1, 1025)  
-open_ports = port_scanner(target_ip, port_range)
-print(f"Açık portlar: {open_ports}")
+    threads = []
+    for port in range(start_port, end_port + 1):
+        t = threading.Thread(target=scan_port, args=(ip, port, timeout, show_banner))
+        threads.append(t)
+        t.start()
+
+    for t in threads:
+        t.join()
+
+    print("\n[*] Tarama tamamlandı.")
+print("""\033[96m
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⡋⠁⠀⠀⠀⠀⢀⣀⣀⡀
+⠀⠀⠀⠀⠀⠠⠒⣶⣶⣿⣿⣷⣾⣿⣿⣿⣿⣛⣋⣉⠀⠀
+⠀⠀⠀⠀⢀⣤⣞⣫⣿⣿⣿⡻⢿⣿⣿⣿⣿⣿⣦⡀⠀⠀
+⠀⠀⣶⣾⡿⠿⠿⠿⠿⠋⠈⠀⣸⣿⣿⣿⣿⣷⡈⠙⢆⠀
+⠀⠀⠉⠁⠀⠤⣤⣤⣤⣤⣶⣾⣿⣿⣿⣿⠿⣿⣷⠀⠀⠀
+⠀⠀⣠⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⢹⣿⠀⠀⠀
+⢠⣾⣿⣿⣿⣿⠟⠋⠉⠛⠋⠉⠁⣀⠀⠀⠀⠸⠃⠀⠀⠀
+⣿⣿⣿⣿⠹⣇⠀⠀⠀⠀⢀⡀⠀⢀⡙⢷⣦⣄⡀⠀⠀⠀
+⣿⢿⣿⣿⣷⣦⠤⠤⠀⠀⣠⣿⣶⣶⣿⣿⣿⣿⣿⣷⣄⠀
+⠈⠈⣿⡿⢿⣿⣿⣷⣿⣿⡿⢿⣿⣿⣁⡀⠀⠀⠉⢻⣿⣧
+⠀⢀⡟⠀⠀⠉⠛⠙⠻⢿⣦⡀⠙⠛⠯⠤⠄⠀⠀⠈⠈⣿
+⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⡆⠀⠀⠀⠀⠀⠀⠀⢀⠟
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+""")
+sexettin_scanner()

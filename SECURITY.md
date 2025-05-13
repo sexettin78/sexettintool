@@ -11,11 +11,13 @@ Yaptığınız ve yapacağınız her şeyden siz sorumlusunuz.
 | 10,11,12| x                  |
 | 13      | x                  |
 | 14      | ✓                  |
+| 15      | ✓                  |
 ## Reporting a Vulnerability
 TR:
-eğer sürümün yanında desteklenmediğine dair işaret varsa (x) sexettintool siber güvenlik aracını güncelleyiniz. yalnızca güncel sürümleri kullanmanız önerilir.
-eğer herhangi bir hata veya güvenlik açığı ile karşılaşırsanız metforadaki iletişim bölümünden veya ana dizindeki README.md dosyasından bana ulaşabilirsiniz.
+Eğer sürümün yanında desteklenmediğine dair işaret varsa (x) sexettintool siber güvenlik aracını güncelleyiniz. Yalnızca güncel sürümleri kullanmanız önerilir.
+Eğer herhangi bir hata veya güvenlik açığı ile karşılaşırsanız Metforadaki iletişim bölümünden veya ana dizindeki README.md dosyasından bana ulaşabilirsiniz.
 Yaptığınız ve yapacağınız her şeyden siz sorumlusunuz.
 
 EN:
-If you encounter any bugs or security vulnerabilities, you can contact me from the contact section in metfora or the README.md file in the main directory. update the sexettintool cybersecurity tool if there is a sign next to the version that it is not supported (x). it is recommended to use only current versions.
+If you encounter any bugs or security vulnerabilities, you can contact me from the contact section in metfora or the README.md file in the main directory. Update the sexettintool cybersecurity tool if there is a sign next to the version that it is not supported (x). It is recommended to use only current versions.
+You are responsible for everything you do and will do.

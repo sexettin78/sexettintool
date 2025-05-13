@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import os
 
 print('''\033[94m 
 
@@ -13,11 +14,12 @@ Seçenekler:
 6- Resmi kes
 7- Resmi aydınlat
 8- Resmin kontrastını ayarla
-
+9- Renk değiştirici
 ''')
 kernel = np.ones((5,5),np.uint8)
 secim = input("Seçiminizi yapınız: ")
-resimsec = input("Resim yolunu giriniz: ")
+resimsec = str()
+if int(secim)<9: resimsec = input("Resim yolunu giriniz: ")
 resim = cv2.imread(resimsec)
 if secim=="1":
     width = int(input("Genişlik giriniz: "))
@@ -81,6 +83,9 @@ elif secim == "8":
     cv2.imwrite(resimad + ".jpg", imgcontrast)
     print("Resim başarıyla oluşturuldu")
     
+elif secim == "9":
+    print("Bu seçenek Linux makinelerde hata verse de doğru çıktıyı üretir. Oluşan dosyayı kontrol etmeyi unutmayınız.")
+    os.system("python3 kits/renkdegistirici.py")
 else:
     print("Seçenek bulunamadı")
 
