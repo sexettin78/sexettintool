@@ -94,7 +94,7 @@ Güvenlik Duvarı Tespit Aracı: wafw00f ile güvenlik duvarı tespiti yapar
 
 Kaba Kuvvet Saldırısı Aracı: 11 farklı seçenek sunar. İstediğiniz bağlantı türüne ncrack ile kaba kuvvet otomasyonu gerçekleştirebilirsiniz.
 
-Port Tarama Aracı: NMAP otomasyonunu gelişmiş bir biçimde sağlayarak daha efektif ve özel taarmalar gerçekleştirmenizi sağlar.
+Port Tarama Aracı: NMAP otomasyonunu gelişmiş bir biçimde sağlayarak daha efektif ve özel taramalar gerçekleştirmenizi sağlar.
 
 Rootkit Tarama Aracı: chkrootkit ile rootkit taraması başlatır.
 
