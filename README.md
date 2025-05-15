@@ -32,6 +32,7 @@ Aşağıdaki komutları **sırayla terminale yapıştırarak** kurulumu gerçekl
 ```bash
 sudo apt update && sudo apt upgrade
 git clone https://github.com/sexettin78/sexettintool
+chmod 777 sexettintool
 cd sexettintool
 python3 metfora.py
 ```
