@@ -17,7 +17,7 @@ Geliştirme süreci boyunca etik değerlere ve eğitim odaklı kullanıma öncel
 
 ## 📘 Öğrenmek İsteyenler İçin
 
-Siz de bu tarz araçlar yazmak, etik hacker'lık ya da Python programlama konusunda kendinizi geliştirmek istiyorsanız, bizzat **Sexettin** tarafından kaleme alınan şu kitabı öneriyoruz:
+Siz de bu tarz araçlar yazmak ya da Python programlama konusunda kendinizi geliştirmek istiyorsanız, bizzat **Sexettin** tarafından kaleme alınan şu kitabı öneriyoruz:
 
 📗 **[Sıfırdan Uygulamalara Python](https://g.co/kgs/Fa6b4sP)**
 
@@ -315,7 +315,7 @@ Aşağıdaki platformlardan geliştirici **Sexettin** ile iletişime geçebilirs
 
 ---
 
-📗 Ayrıca: **“Sıfırdan Uygulamalara Python”** kitabımı satın alarak hem destek olabilir hem de bu alandaki bilginizi güçlendirebilirsiniz!
+📗 Ayrıca: **“Sıfırdan Uygulamalara Python”** kitabını satın alarak hem destek olabilir hem de bu alandaki bilginizi güçlendirebilirsiniz!
 
 
 ![logo](sexettin.png "Yapımcı: Sexettin")
